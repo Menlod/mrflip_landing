@@ -10,6 +10,8 @@
   --text-black: #333333;
   --text-black-80: #33333380;
   --primary-bg: #f4f8ff;
+  --block-bg: #ffffff;
+  --white-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   @media screen and (max-width: 1276px) {
     font-size: 12px;
@@ -479,6 +481,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 10rem;
+  gap: 3rem;
   & h1 {
     display: block;
     color: #333;
@@ -503,5 +506,245 @@ body {
     line-height: normal;
     max-width: 611px;
     margin: 60px auto 0;
+  }
+  &__list {
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 860.98px) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1.5rem;
+      border-radius: 30px;
+      background: var(--block-bg);
+      width: calc((100% - 2rem) / 3);
+      gap: 1.5rem;
+      box-shadow: var(--white-shadow);
+      color: var(--text-black);
+      @media screen and (max-width: 860.98px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 2rem;
+      }
+
+      &-img {
+        & img {
+          width: 5rem;
+        }
+      }
+      &-time {
+        font-weight: 600;
+        font-size: 2rem;
+      }
+      &-descr {
+        padding-top: 1.2rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__map {
+    border-radius: 35px;
+    color: var(--text-black);
+    background-color: var(--primary-bg);
+    box-shadow: var(--white-shadow);
+    background-color: var(--block-bg);
+    padding: 2.5rem;
+    width: 100%;
+    &-title {
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    &-container {
+      width: 100%;
+      padding: 4rem;
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      flex-direction: column;
+      background-color: #a379d9;
+      border-radius: 35px;
+      color: #fff;
+    }
+  }
+}
+
+.mission {
+  border-radius: 35px;
+  background-color: var(--block-bg);
+  box-shadow: var(--white-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+  overflow: hidden;
+  margin-top: 3rem;
+  &__top {
+    display: flex;
+    &-item {
+      color: var(--text-black);
+      font-size: 2.5rem;
+      & img {
+        width: 100%;
+      }
+    }
+  }
+  &__goallist {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    @media screen and (max-width: 860.98px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 2rem;
+    }
+    &-item {
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: var(--white-shadow);
+      border-radius: 16px;
+      display: flex;
+      gap: 0.5rem;
+      transition: transform 0.2s linear;
+      &:hover {
+        transform: translateY(-5px);
+      }
+      &-num {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 1.5rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-text {
+        color: var(--text-black);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        &-title {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+        &-descr {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  &__footer {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    &-brand {
+      background: linear-gradient(90deg, #7b61ff, #5a40db, #7b61ff);
+      background-size: 200% 100%;
+      background-clip: text;
+      color: transparent;
+      animation: glide 2s linear infinite alternate;
+      font-weight: 600;
+    }
+  }
+}
+
+.awards {
+  border-radius: 35px;
+  background-color: var(--block-bg);
+  box-shadow: var(--white-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+  overflow: hidden;
+  margin-top: 3rem;
+  width: 100%;
+  &__top {
+    font-size: 1.6rem;
+    color: var(--text-black);
+    font-weight: 600;
+    display: flex;
+    gap: 2rem;
+    & img {
+      max-width: 9rem;
+      align-self: flex-start;
+    }
+    &-text {
+      font-size: inherit;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &-item {
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: var(--white-shadow);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      &-header {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 1rem 1.5rem;
+        font-size: 1.6rem;
+        display: flex;
+        & img {
+          width: 1.6rem;
+          transform: rotateX(180deg) translateY(-4px);
+          margin-right: 0.8rem;
+          align-self: flex-start;
+        }
+      }
+      &-content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        background-position: right -0.5rem bottom 0rem;
+        background-repeat: no-repeat;
+        backface-visibility: hidden;
+        background-size: 7rem;
+        &--cup {
+          background-image: url(./assets/images/awards/cup.svg);
+        }
+        &--doc {
+          background-image: url(./assets/images/awards/list.svg);
+          background-size: 8rem;
+          background-position: right -1rem bottom -1rem;
+        }
+        &-item {
+          position: relative;
+          font-size: 1.4rem;
+          padding-left: 2.4rem;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 1.4rem;
+            height: 1.4rem;
+            background-image: url("./assets/images/awards/check.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translateY(4px);
+          }
+        }
+      }
+    }
   }
 }

@@ -109,8 +109,8 @@ const Carousel = () => {
         }}
         aria-label=""
       >
-        {slides.map((slide) => (
-          <SplideSlide>
+        {slides.map((slide, index) => (
+          <SplideSlide key={index}>
             <a className="slide-slide" target="_blank" href={slide.url}>
               <img
                 className="slide-img"
