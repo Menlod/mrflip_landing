@@ -10,7 +10,7 @@ const Mission: React.FC = () => {
             Наша миссия: Чтобы продать недвижимость было быстро, просто,
             спокойно и не было испытанием.
           </div>
-          <div className="mission__top-item">
+          <div className="mission__top-item mission__top-item--img">
             <img src={Man} alt="" />
           </div>
         </div>
