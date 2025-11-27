@@ -8,14 +8,21 @@ import ItemImg6 from "../../assets/images/functionality/6.svg";
 
 import ItemImg0_1 from "../../assets/images/functionality/0_1.svg";
 import ItemImg1_1 from "../../assets/images/functionality/1_1.svg";
-import ItemImg1_2 from "../../assets/images/functionality/2_1.svg";
-import ItemImg1_3 from "../../assets/images/functionality/3_1.svg";
-import ItemImg1_4 from "../../assets/images/functionality/4_1.svg";
-import ItemImg1_5 from "../../assets/images/functionality/5_1.svg";
-import ItemImg1_6 from "../../assets/images/functionality/6_1.svg";
+import ItemImg2_1 from "../../assets/images/functionality/2_1.svg";
+import ItemImg3_1 from "../../assets/images/functionality/3_1.svg";
+import ItemImg4_1 from "../../assets/images/functionality/4_1.svg";
+import ItemImg5_1 from "../../assets/images/functionality/5_1.svg";
+import ItemImg6_1 from "../../assets/images/functionality/6_1.svg";
 
 const Functionality: React.FC = () => {
-  const possibilities = [
+  interface IPossibilities {
+    img: string;
+    title: string;
+    text: string;
+    slide: string;
+  }
+
+  const possibilities: IPossibilities[] = [
     {
       img: ItemImg1,
       title: "Предложение квартиры",
@@ -26,31 +33,31 @@ const Functionality: React.FC = () => {
       img: ItemImg2,
       title: "Партнерская программа",
       text: "Приглашайте друзей и получайте вознаграждение",
-      slide: ItemImg1_2,
+      slide: ItemImg2_1,
     },
     {
       img: ItemImg3,
       title: "Индексы цен вторички",
       text: "Возможность отследить последние изменения в индексах цен вторички",
-      slide: ItemImg1_3,
+      slide: ItemImg3_1,
     },
     {
       img: ItemImg4,
       title: "Квартиры под флиппинг",
       text: "Поможем выбрать лучший объект для флиппинга и вложиться инвестициями",
-      slide: ItemImg1_4,
+      slide: ItemImg4_1,
     },
     {
       img: ItemImg5,
       title: "Инвестиционные предложения",
       text: "Предлагаем инвестиционные предложения без рисков",
-      slide: ItemImg1_5,
+      slide: ItemImg5_1,
     },
     {
       img: ItemImg6,
       title: "Краудфандинг",
       text: "Выбор инвест-предложений для входа со своими средствами",
-      slide: ItemImg1_6,
+      slide: ItemImg6_1,
     },
   ];
 

@@ -9,7 +9,13 @@ import Img5 from "../../assets/images/howitworks/5.svg";
 const HowItWorks: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const ImageContainer = useRef<HTMLImageElement>(null);
-  const items = [
+
+  interface IHowItWorksItem {
+    text: string;
+    img: string;
+  }
+
+  const items: IHowItWorksItem[] = [
     {
       text: "Оценим вашу квартиру",
       img: Img1,

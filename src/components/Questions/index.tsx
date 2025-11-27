@@ -2,7 +2,12 @@ import React from "react";
 import Accordion from "../Accordion";
 
 const Questions: React.FC = () => {
-  const questionsList = [
+  interface IQuestionsList {
+    title: string;
+    text: string;
+  }
+
+  const questionsList: IQuestionsList[] = [
     {
       title: "Какие документы нужны для продажи квартиры?",
       text: `Вот базовый комплект документов, необходимых для продажи квартиры.
