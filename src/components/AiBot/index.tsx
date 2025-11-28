@@ -44,6 +44,7 @@ export const AiBot: React.FC = () => {
               href="https://t.me/mrflip_agents_bot"
               target="_blank"
               className="aibot__link aibot__purple"
+              rel="noopener noreferrer"
             >
               <span>@MRFLIP_AGENTS_BOT</span>
             </a>
