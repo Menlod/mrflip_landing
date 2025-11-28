@@ -18,7 +18,6 @@ const targets = browserslistToTargets(
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Setting the correct base path for GitHub Pages
   base: process.env.GITHUB_PAGES ? "/mrflip/" : "/",
   plugins: [
     tanstackRouter({
