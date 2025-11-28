@@ -95,7 +95,7 @@ export const Carousel: React.FC = () => {
       <Splide
         options={{
           rewind: true,
-          paddding: "2rem",
+          padding: "2rem",
           type: "loop",
           autoWidth: true,
           autoHeight: false,
@@ -107,16 +107,21 @@ export const Carousel: React.FC = () => {
           interval: 6000,
           height: 136,
         }}
-        aria-label=""
+        aria-label="Карусель с логотипами изданий"
       >
         {slides.map((slide, index) => (
-          <SplideSlide key={index}>
-            <a className="slide-slide" target="_blank" href={slide.url}>
+          <SplideSlide key={`${slide.title}-${index}`}>
+            <a
+              className="slide-slide"
+              target="_blank"
+              href={slide.url}
+              rel="noopener noreferrer"
+            >
               <img
                 className="slide-img"
                 src={slide.img}
                 style={{ width: `${slide.width}px` }}
-                alt="Image 1"
+                alt={`Логотип ${slide.title}`}
               />
             </a>
           </SplideSlide>
