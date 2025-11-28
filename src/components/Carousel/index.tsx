@@ -1,17 +1,17 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
-import Bankiru from "../../assets/images/carousel/bankiru.svg";
-import Forbes from "../../assets/images/carousel/forbes.svg";
-import Gazetaru from "../../assets/images/carousel/gazetaru.svg";
-import Izvestia from "../../assets/images/carousel/Izvestia.svg";
-import Lentaru from "../../assets/images/carousel/lentaru.svg";
-import Kommersant from "../../assets/images/carousel/kommersant.svg";
-import Prime from "../../assets/images/carousel/prime.svg";
-import Rbc from "../../assets/images/carousel/rbc.svg";
-import Rianews from "../../assets/images/carousel/rianews.svg";
-import Tass from "../../assets/images/carousel/tass.svg";
-import Deita from "../../assets/images/carousel/deitaru.svg";
+import Bankiru from "@/assets/images/carousel/bankiru.svg";
+import Forbes from "@/assets/images/carousel/forbes.svg";
+import Gazetaru from "@/assets/images/carousel/gazetaru.svg";
+import Izvestia from "@/assets/images/carousel/Izvestia.svg";
+import Lentaru from "@/assets/images/carousel/lentaru.svg";
+import Kommersant from "@/assets/images/carousel/kommersant.svg";
+import Prime from "@/assets/images/carousel/prime.svg";
+import Rbc from "@/assets/images/carousel/rbc.svg";
+import Rianews from "@/assets/images/carousel/rianews.svg";
+import Tass from "@/assets/images/carousel/tass.svg";
+import Deita from "@/assets/images/carousel/deitaru.svg";
 
 interface ISlides {
   title: string;
@@ -89,7 +89,7 @@ const slides: ISlides[] = [
   },
 ];
 
-const Carousel = () => {
+export const Carousel: React.FC = () => {
   return (
     <div className="slide-container">
       <Splide
@@ -125,5 +125,3 @@ const Carousel = () => {
     </div>
   );
 };
-
-export default Carousel;

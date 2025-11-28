@@ -1,0 +1,17 @@
+export { Header } from "@/components/Header";
+export { MainMenu } from "@/components/MainMenu";
+export { Carousel } from "@/components/Carousel";
+export { Main } from "@/components/Main";
+export { RealEstate } from "@/components/RealEstate";
+export { Mission } from "@/components/Mission";
+export { Awards } from "@/components/Awards";
+export { Team } from "@/components/Team";
+export { Career } from "@/components/Career";
+export { AiBot } from "@/components/AiBot";
+export { Agency } from "@/components/Agency";
+export { Offer } from "@/components/Offer";
+export { Functionality } from "@/components/Functionality";
+export { HowItWorks } from "@/components/HowItWorks";
+export { Questions } from "@/components/Questions";
+export { Invite } from "@/components/Invite";
+export { Footer } from "@/components/Footer";

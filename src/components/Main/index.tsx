@@ -1,14 +1,14 @@
 import React, { useRef } from "react";
 import Clock from "../Clock";
-import { parseCianFlatUrl } from "../../utils";
-import Ico1 from "../../assets/images/phone/ico1.svg";
-import Ico2 from "../../assets/images/phone/ico2.svg";
-import Ico3 from "../../assets/images/phone/ico3.svg";
-import Ico4 from "../../assets/images/phone/ico4.svg";
-import Avatar from "../../assets/images/phone/avatar.svg";
-import Info from "../../assets/images/phone/info.svg";
+import { parseCianFlatUrl } from "@/utils";
+import Ico1 from "@/assets/images/phone/ico1.svg";
+import Ico2 from "@/assets/images/phone/ico2.svg";
+import Ico3 from "@/assets/images/phone/ico3.svg";
+import Ico4 from "@/assets/images/phone/ico4.svg";
+import Avatar from "@/assets/images/phone/avatar.svg";
+import Info from "@/assets/images/phone/info.svg";
 
-const Main: React.FC = () => {
+export const Main: React.FC = () => {
   const cianLink = useRef<HTMLInputElement>(null);
   const CalculateSummaryHandler = () => {
     const cianId =
@@ -18,7 +18,7 @@ const Main: React.FC = () => {
     return cianId;
   };
   return (
-    <>
+    <div className="container">
       <div className="wrapper">
         <div className="main">
           <div className="main__left">
@@ -110,8 +110,6 @@ const Main: React.FC = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
-
-export default Main;
