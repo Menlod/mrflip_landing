@@ -18,7 +18,7 @@ const targets = browserslistToTargets(
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.BASE_URL || "/",
+  base: "/mrflip_landing/",
   plugins: [
     tanstackRouter({
       target: "react",
