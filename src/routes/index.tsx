@@ -22,7 +22,6 @@ import {
   Team,
 } from "@/components";
 
-// Регистрируем плагин ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 export const Route = createFileRoute("/")({
@@ -59,7 +58,7 @@ function Index() {
           }
         );
       });
-    }, 100);
+    }, 300);
 
     return () => {
       clearTimeout(timeout);
