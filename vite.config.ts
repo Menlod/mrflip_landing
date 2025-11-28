@@ -18,8 +18,8 @@ const targets = browserslistToTargets(
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Установка базового пути для GitHub Pages
-  base: process.env.GITHUB_PAGES ? "/myfallenlife/" : "/",
+  // Setting the correct base path for GitHub Pages
+  base: process.env.GITHUB_PAGES ? "/mrflip/" : "/",
   plugins: [
     tanstackRouter({
       target: "react",
