@@ -16,7 +16,10 @@ const targets = browserslistToTargets(
   browserslist(browserslistQuery, { env: "production" })
 );
 
+// https://vitejs.dev/config/
 export default defineConfig({
+  // Установка базового пути для GitHub Pages
+  base: process.env.GITHUB_PAGES ? "/myfallenlife/" : "/",
   plugins: [
     tanstackRouter({
       target: "react",
