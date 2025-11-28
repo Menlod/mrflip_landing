@@ -18,7 +18,7 @@ const targets = browserslistToTargets(
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_PAGES ? "/mrflip/" : "/",
+  base: process.env.GITHUB_PAGES ? "/mrflip_landing/" : "/",
   plugins: [
     tanstackRouter({
       target: "react",
