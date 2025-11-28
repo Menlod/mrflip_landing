@@ -21,7 +21,6 @@
     font-size: 11px;
   }
 }
-
 body {
   font-family: "Involve-Regular", sans-serif;
   font-optical-sizing: auto;
@@ -1415,4 +1414,12 @@ body {
       }
     }
   }
+}
+
+.animation-container > *:nth-child(n + 4):not(:last-child) {
+  opacity: 0;
+}
+
+.animation-container > *:nth-child(-n + 3) {
+  opacity: 1 !important;
 }
