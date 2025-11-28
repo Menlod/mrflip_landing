@@ -40,9 +40,7 @@ jobs:
         continue-on-error: true
 
       - name: Build project
-        run: npm run build
-        env:
-          GITHUB_PAGES: true
+        run: vite build --base=/mrflip_landing/
 
       - name: Verify build output
         run: |
